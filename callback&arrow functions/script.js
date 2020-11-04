@@ -28,3 +28,28 @@ const returnTime = function (time) {
 }
 
 getTime(returnTime)
+
+//Exercise 3
+
+const displayData = function (alertDataFunc, logDataFunc, data) {
+    alertDataFunc(data);
+    logDataFunc(data);
+  };
+  
+  displayData(alert, logData, "I like to party")
+
+  function logData(data){
+      console.log(data);
+  }
+  
+
+  //Exercise 4
+
+
+
+let capitalize=(str) =>{ return str.charAt(0).toUpperCase() + str.slice(1).toLowerCase();
+}
+
+ console.log(capitalize("bOb")) // returns Bob
+ console.log(capitalize("TAYLOR")) // returns Taylor
+ console.log(capitalize("feliSHIA")) // returns Felishia
