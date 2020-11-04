@@ -1,0 +1,93 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+#page{
+    display:grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 14fr 1fr;
+    height: 100vh;
+    grid-template-areas:
+    "f c"
+    "f s"
+    ;
+    
+
+}
+#friends{
+    min-width: 300px;
+    display: grid;
+    background-color: rgb(130,63,160);
+    grid-template-rows: repeat(4,1fr);
+    grid-area: f;
+    padding: 10px;
+
+}
+
+#chat{
+
+    display:grid;
+    background-color: rgb(233, 238, 239);
+    grid-area: c;
+    padding: 10px;
+}
+
+.chatMsg{
+    width: fit-content;
+    padding: 10px 5px;
+    border-radius: 3px;
+
+}
+
+.send{
+    justify-self: right;
+}
+.send >div{
+    background-color:rgb(48, 196, 108);
+}
+
+.receive >div{
+    background-color:rgb(181, 187, 191);
+}
+
+#search{
+    display:grid;
+    grid-template-columns: 4fr 1fr;
+    grid-template-rows: 1fr;
+    grid-area: s;
+}
+p{
+    margin: 3px;
+    
+    height: fit-content;
+}
+
+
+#messageInput{
+    justify-self: right;
+    border: 1px solid gray;
+    justify-self: stretch;
+    height: 100%;
+}
+::placeholder{
+    color:rgb(200,200,200);
+
+}
+
+button{
+    padding-left:20px;
+    border: none;
+    background-color: rgb(130,63,160);
+    justify-self: stretch;
+    height: 100%;
+    color: white;
+}
+
+
+
+.names{
+    background-color: rgba(255,255,255,0.2);
+    padding: 5px;
+}
+
